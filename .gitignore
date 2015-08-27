@@ -1,0 +1,14 @@
+# npm
+node_modules
+npm-debug.log
+
+# Build
+lib
+
+# Exclude IDE project folders
+.idea
+.alm
+.vscode
+
+# OS files
+.DS_STORE

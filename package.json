@@ -1,0 +1,36 @@
+{
+  "name": "uic",
+  "author": "basarat",
+  "version": "1.0.0",
+  "description": "UI components",
+  "main": "./lib",
+  "scripts": {
+    "test": "npm run test-base -- --single-run",
+    "test-watch": "npm run test-base -- --auto-watch",
+    "test-base": "./node_modules/.bin/karma start",
+    "prebuild": "rm -rf lib",
+    "eslint": "gulp eslint",
+    "build": "npm run eslint && babel --stage 1 ./src --out-dir ./lib",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "material ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basarat/uic.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basarat/uic/issues"
+  },
+  "homepage": "https://github.com/basarat/uic",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": ">=0.16"
+  },
+  "devDependencies": {
+  }
+}
