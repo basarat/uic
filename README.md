@@ -8,3 +8,16 @@ I've had the luxury of working in excellent places with excellent teams unifying
 
 The objective is to share concepts (not just code). In fact the code should really be a *sample* of how the concepts work in practice to build a coherent UI experience.
 
+# The process of building great frontend experiences
+
+## Pattern: It starts with design
+It starts with *design*. If you don't have design guides of what you are tryin to build (in code) then you are going to have a problem. 
+
+Here lets leverage the excellent [material UI guide](https://material.io/guidelines/) provided by google
+
+
+## Pattern: Now that you know where you are going, backtrack
+Target big, and break down small tangible problems. Example: 
+* You *this great looking page* (assume some great login page). 
+* You need *this component* to build this page (assume some input field). 
+* This component needs these other components to exist (assume *error display* or something else).
