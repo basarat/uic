@@ -4,13 +4,10 @@
   "version": "1.0.0",
   "description": "UI components",
   "main": "./lib",
+  "types": "./lib",
   "scripts": {
-    "test": "npm run test-base -- --single-run",
-    "test-watch": "npm run test-base -- --auto-watch",
-    "test-base": "./node_modules/.bin/karma start",
-    "prebuild": "rm -rf lib",
-    "eslint": "gulp eslint",
-    "build": "npm run eslint && babel --stage 1 ./src --out-dir ./lib",
+    "build:tsc": "tsc -p .",
+    "build": "npm run build:tsc && npm run build",
     "prepublish": "npm run build"
   },
   "keywords": [
@@ -26,11 +23,15 @@
     "url": "https://github.com/basarat/uic/issues"
   },
   "homepage": "https://github.com/basarat/uic",
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": ">=0.16"
   },
   "devDependencies": {
+    "@types/react": "16.0.40",
+    "@types/react-dom": "16.0.4",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "typescript": "2.7.2"
   }
 }
