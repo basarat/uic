@@ -9,4 +9,9 @@ render({
   # Welcome to the Styleguide
   Hope you enjoy the documentation.
   `);
+
+  eze.md(`
+  # Buttons
+  ## FlatButton
+  `);
 });
