@@ -1,4 +1,7 @@
 # uic
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/basarat/uic.svg)](https://greenkeeper.io/)
+
 UI Components for React with strong typing using TypeScript.
 
 THIS IS NOT READY AT THE MOMENT. PLEASE MOVE ON.
